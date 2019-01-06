@@ -1,0 +1,723 @@
+/* -----------------------------------------------------------
+	main stylesheet
+----------------------------------------------------------- */
+html {height:100%;}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: white;
+	background:white;
+	font-family: Lucida Grande, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 11px;
+}
+
+/* -----------------------------------------------------------
+	images
+----------------------------------------------------------- */ 
+
+img {border:none;}
+
+/* -----------------------------------------------------------
+	anchors
+----------------------------------------------------------- */ 
+
+a {color:#0066CC;text-decoration:none;cursor:pointer;}
+a:hover {color: #000000;text-decoration: underline;}
+
+/* -----------------------------------------------------------
+	headings
+----------------------------------------------------------- */ 
+
+h1, h2, h3, h4, h5, h6 {color:#292929;font-weight: bold;}
+h1 {font-size: 22px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 11px;}
+
+/* -----------------------------------------------------------
+	lists
+----------------------------------------------------------- */ 
+
+ul.circle {list-style-type:circle;}
+ul.disc {list-style-type:disc;}
+ul.square { list-style-type: square;}
+ol.lower-roman {list-style-type:lower-roman;}
+ol.upper-roman {list-style-type:upper-roman;}
+ol.lower-alpha {list-style-type:lower-alpha;}
+ol.upper-alpha {list-style-type:upper-alpha;}
+ol.decimal  {list-style-type:decimal; }
+
+/* -----------------------------------------------------------
+	colors
+----------------------------------------------------------- */ 
+
+div.color {right:0; margin:116px 13px 0 0;padding:0 4px 4px 4px;clear:both;overflow:hidden;position:absolute;background:#ffffff;border:1px solid #cccccc;}
+div.color a {margin:4px 0 0 0;padding:0;width:20px;height:20px;display:block;}
+div.color a.blue {background:#376ea6;}
+div.color a.green {background:#85924b;}
+div.color a.brown {background:#9b6e42;}
+div.color a.purple {background:#88528b;}
+div.color a.red {background:#bd3220;}
+div.color a.greyblue {background:#566e86;}
+
+/* -----------------------------------------------------------
+	header
+----------------------------------------------------------- */ 
+
+#header {
+	margin: 0;
+	padding: 5px 60px 0 60px;
+	background: #E2E2E2;
+}
+
+/* -----------------------------------------------------------
+	header -> logo
+----------------------------------------------------------- */ 
+
+#header #logo {float:left;}
+#header #logo h1 {}
+#header #logo a {color:#ffffff;	text-decoration:none;}
+#header #logo a:hover {color:#ffffff;}
+
+/* -----------------------------------------------------------
+	header -> user
+----------------------------------------------------------- */ 
+
+#header ul#user {margin:0 0 30px 0;padding:0;float:right;}
+#header ul#user li {
+	margin: 0;
+	padding: 5px 12px 5px 12px;
+	list-style: none;
+	float: left;
+	border-left: 1px solid #bbbbbb;
+	border-right: 1px solid #a5a5a5;
+}
+#header ul#user li.first {border-left:none;}
+#header ul#user li.last {border-right: none;}
+#header ul#user li a {color:#4e4e4e;font-weight:bold;text-decoration:none;}
+#header ul#user li a:hover {color:#376ea6;text-decoration:underline;}
+#header ul#user li.highlight a {color:#ffffff;}
+#header ul#user li.highlight a:hover {color:#376ea6;}
+
+#header #header-inner {
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	clear: both;
+	position: relative;	
+	border-bottom: 0px solid #ffffff;
+}
+
+/* -----------------------------------------------------------
+	header -> home
+----------------------------------------------------------- */ 
+
+#header #header-inner #home {float:left;}
+#header #header-inner #home a
+{
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	width: 46px;
+	display: block;	
+	background-position: 0 0;	
+}
+
+#header #header-inner #home a:hover
+{
+	background-position: 0 -40px;	
+}
+
+/* -----------------------------------------------------------
+	header -> quick
+----------------------------------------------------------- */ 
+
+#header #header-inner #quick,
+#header #header-inner #quick ul
+{
+	margin: 10px 5px 0 0;
+	padding: 0;
+	position: relative;
+	float: right;
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+#header #header-inner #quick li
+{
+	margin: 0 5px 0 0;
+	padding: 0;
+	position: relative;
+	float: left;
+}
+
+#header #header-inner #quick li a
+{
+	top: 0;
+	left: 0;
+	padding: 0;
+	height: 1%;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#header #header-inner #quick li span
+{
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 10px 12px 8px 10px;
+	height: 1%;
+	display: block;
+	float: left;	
+}
+
+#header #header-inner #quick li span.normal
+{
+	padding: 10px 12px 8px 12px;
+	border: none;	
+}
+
+#header #header-inner #quick li span.icon
+{
+	top: 0;
+	left: 0;
+	padding: 8px 8px 4px 8px;	
+	border-left: none;	
+}
+
+#header #header-inner #quick li a:hover
+{
+	background: #4e4e4e url("images/blue/quick_l_selected.png") no-repeat top left;
+}
+
+#header #header-inner #quick li a:hover span
+{
+	background: url("images/blue/quick_r_selected.png") no-repeat top right;
+	border-left: 1px solid #545454;
+}
+
+#header #header-inner #quick li a:hover span.normal
+{
+	border: none;	
+}
+
+#header #header-inner #quick li a:hover span.icon
+{
+	background: url("images/blue/quick_l_selected.png") no-repeat top left;
+	border-left: none;
+	border-right: 1px solid #464646;
+}
+
+#header #header-inner #quick ul
+{
+	top: 29px;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	display: none;
+	position: absolute;
+	background: #FFFFFF;
+	border: 1px solid #666;
+	border-top: 1px solid #003367;
+	z-index: 100;
+}
+
+#header #header-inner #quick li ul li
+{
+	border-bottom: 1px solid #dddddd;	
+}
+
+#header #header-inner #quick li ul li.last
+{
+	border: none;	
+}
+
+#header #header-inner #quick li ul li a
+{
+	margin: 0;
+	padding: 7px 9px 7px 9px;
+	height: 1%;
+	width: 182px;
+	height: auto;
+	display: block;
+	float: left;
+	background: #FFFFFF;
+	color: #0066CC;
+	font-weight: normal;
+}
+
+#header #header-inner #quick li ul li a.childs
+{
+	margin: 0;
+	padding: 7px 9px 7px 24px;
+	width: 167px;
+	background: #FFFFFF url("../images/plus.png") no-repeat 8px 9px;
+}
+
+#header #header-inner #quick li ul li a:hover
+{
+	color: #000000;
+	background: #FFFFFF;
+}
+
+#header #header-inner #quick li ul li a.childs:hover
+{
+	background: #FFFFFF url("../images/minus.png") no-repeat 8px 9px;
+}
+
+#header #header-inner #quick ul ul 
+{
+	top: auto;
+}	
+
+#header #header-inner #quick li ul ul 
+{
+	right: 200px;
+}
+
+#header #header-inner #quick li:hover ul ul, 
+#header #header-inner #quick li:hover ul ul ul, 
+#header #header-inner #quick li:hover ul ul ul ul 
+{
+	display: none;
+}
+
+#header #header-inner #quick li:hover ul, 
+#header #header-inner #quick li li:hover ul, 
+#header #header-inner #quick li li li:hover ul, 
+#header #header-inner #quick li li li li:hover ul
+{
+	display: block;
+}
+
+/* -----------------------------------------------------------
+	header corners
+----------------------------------------------------------- */ 
+
+#header #header-inner div.corner
+{
+	height: 6px;
+	width: 6px;
+	position: absolute;	
+}
+
+#header #header-inner div.tl
+{
+	top: 0;
+	left: 0;
+	background-position: 0 0;
+}
+
+#header #header-inner div.tr
+{
+	top: 0;
+	right: 0;
+	background-position: -6px 0;
+}
+
+/* -----------------------------------------------------------
+	content
+----------------------------------------------------------- */ 
+
+#content 
+{
+	margin: 0px 0 5px 0;
+	padding: 0;
+	min-height: 100%;
+	clear: both;
+	overflow: hidden;	
+}
+
+/* -----------------------------------------------------------
+	content -> left
+----------------------------------------------------------- */ 
+
+#content #left
+{
+	left: 0;
+	width: 280px;
+	position: absolute;
+}
+
+/* -----------------------------------------------------------
+	content -> left -> menu
+----------------------------------------------------------- */ 
+
+#content #left #menu
+{
+	margin: 5px 10px 0 60px;
+	padding: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+/* -----------------------------------------------------------
+	content -> left -> menu / heading
+----------------------------------------------------------- */ 
+
+#content #left #menu h6
+{
+	margin: 5px 0 0 0;
+	padding: 0;
+	clear: both;
+	overflow: hidden;
+	background: #dfdfdf url("../images/menu.png") repeat-x;
+	color: #6e6e6e;
+}
+
+#content #left #menu h6 a
+{
+	margin: 0;
+	padding: 0;
+	height: 1%;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	background: url("../images/menu_l.png") no-repeat top left;
+	color: #6e6e6e;
+	text-decoration: none;
+}
+
+#content #left #menu h6 span
+{
+	margin: 0;
+	padding: 9px 10px 10px 10px;
+	height: 1%;
+	display: block;
+	background: url("../images/menu_r.png") no-repeat top right;
+}
+
+#content #left #menu h6.selected
+{	
+	color: #FFFFFF;
+}
+
+#content #left #menu h6.selected a
+{	
+	color: #ffffff;
+}
+
+/* -----------------------------------------------------------
+	content -> left -> menu / links
+----------------------------------------------------------- */
+
+#content #left #menu ul
+{
+	margin: 0;
+	padding: 0;	
+}
+
+#content #left #menu ul.opened
+{
+	display: block;	
+}
+
+#content #left #menu ul.closed
+{
+	display: none;	
+}
+
+#content #left #menu li
+{
+	margin: 0;
+	padding: 0;
+	clear: both;
+	overflow: hidden;
+	list-style: none;	
+	color: #ffffff;
+	font-size: 1px;
+	line-height: 0;
+}
+
+#content #left #menu li a
+{
+	margin: 0 0 0 6px;
+	padding: 7px 0 9px 18px;
+	height: 1%;
+	display: block;
+	float: left;
+	background: url("../images/menu_arrow.png") no-repeat 2px 11px;
+	color: #ffffff;
+	font-size: 11px;
+	line-height: normal;
+	text-decoration: none;
+}
+
+/* -----------------------------------------------------------
+	content -> left -> menu / collapsible
+----------------------------------------------------------- */ 
+
+#content #left #menu li.collapsible
+{
+	margin: -1px 0 0 0;	
+}
+
+#content #left #menu li.collapsible a
+{
+	margin: 0 0 0 26px;
+	padding: 8px 0 8px 0;
+	height: 1%;
+	display: block;
+	background: transparent;
+	float: left;
+	font-weight: bold;
+}
+
+#content #left #menu li.collapsible a.plus
+{
+	margin: 0;
+	padding: 7px 0 10px 26px;
+	height: 10px;
+	width: 100%;
+	display: block;
+	float: left;
+	background: url("../images/menu_plus.png") no-repeat 5px 10px;
+	border: none;
+}
+
+#content #left #menu li.collapsible a.minus
+{
+	margin: 0;
+	padding: 7px 0 10px 26px;
+	height: 10px;
+	width: 100%;
+	display: block;
+	float: left;
+	background: url("../images/menu_minus.png") no-repeat 5px 10px;
+	border: none;	
+}
+
+#content #left #menu li ul
+{
+	margin: 0;
+	padding: 0;	
+}
+
+#content #left #menu li ul.expanded
+{
+	display: block;
+}
+
+#content #left #menu li ul.collapsed
+{
+	display: none;	
+}
+
+#content #left #menu li ul li
+{
+	margin: 0;
+	padding: 0;
+	clear: both;
+	overflow: hidden;
+	list-style: none;
+	background: url("../images/menu_arrow.png") no-repeat 10px 12px;	
+	color: #ffffff;
+}
+
+#content #left #menu li.collapsible ul li a
+{
+	font-weight: normal;
+}
+
+#content #left #menu li.last
+{
+	border-bottom: none;	
+}
+
+/* -----------------------------------------------------------
+	content -> right
+----------------------------------------------------------- */ 
+
+#content #right
+{
+	margin-top:0px;
+	margin-right:60px;
+	margin-left:285px;
+	padding: 0;
+}
+/* -----------------------------------------------------------
+	footer
+----------------------------------------------------------- */
+#footer
+{
+	margin:0;	
+	width:100%;	
+	text-align: right;
+	background: #00376D url("../images/blue/header_inner.png") repeat-x;	
+	bottom:0;
+   
+}
+
+#footer p
+{
+	padding: 10px 60px 10px 60px;
+	color: #ffffff;
+	text-align:right;
+}
+
+/*Form Design CSS*/
+.tblView {TABLE-LAYOUT: fixed; BORDER-TOP: #326395 1px solid;}
+.tblView TH {BORDER-BOTTOM: #e4e4e4 1px solid; TEXT-ALIGN: left; BACKGROUND: #f5f5f5; HEIGHT: 30px;}
+.tblView TH .bullet {PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 10px; PADDING-RIGHT: 0px; FONT: bold 11px Tahoma; BACKGROUND: no-repeat 0px 5px; COLOR: #666; PADDING-TOP: 0px;}
+
+/*.tblView TD {BORDER-BOTTOM: #ededed 1px solid; FONT: 12px/18px Verdana; COLOR: #666; PADDING-BOTTOM: 5px; PADDING-TOP: 5px;}*/
+
+.tblView TD.td {BORDER-BOTTOM: #ededed 1px solid; PADDING: 2px 0px 2px 10px; FONT: 13px Verdana; HEIGHT: 34px; COLOR: #666;}
+.tblView TD A {}
+.tblView TD A:hover {}
+.tblView TD .add {WIDTH: 28px; DISPLAY: inline-block;}
+.tblView TD .add02 {TEXT-ALIGN: right; WIDTH: 46px; DISPLAY: inline-block;}
+.tblView TD INPUT.txtClass {BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 13px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-FAMILY: Verdana; BACKGROUND: #f2f2f2; HEIGHT: 24px; COLOR: #666666; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 0px;}
+.tblView TD INPUT.txtRequiredClass {BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 13px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-FAMILY: Verdana; BACKGROUND: #f8f5ed; HEIGHT: 24px; COLOR: #666666; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 0px;}
+
+.tblView TD INPUT[disabled].txt {BACKGROUND: Red}
+
+.tblView TD INPUT[readonly].txt {BACKGROUND: #f2f2f2;}
+.tblView .tdrow01 {PADDING-BOTTOM: 7px; PADDING-TOP: 7px;}
+.tblView TD .deliveryBox {TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; WIDTH: 196px; PADDING-RIGHT: 0px; HEIGHT: 40px; COLOR: #ccc; FONT-SIZE: 11px; PADDING-TOP: 0px;}
+.tblView TD .tdrowfl {WIDTH: 250px; DISPLAY: inline; FLOAT: left;}
+.tblView TD .tdrowfr {TEXT-ALIGN: right; MARGIN: 0px 20px 0px 0px; WIDTH: 350px; DISPLAY: inline; FLOAT: right;}
+.tblView TD .textareaWrap {}
+.tblView TD .textareaView {PADDING-BOTTOM: 30px; OVERFLOW-X: auto; MIN-HEIGHT: 30px; PADDING-LEFT: 20px; WIDTH: 769px; PADDING-RIGHT: 20px; FONT: 12px/1.9em Verdana; COLOR: #888; OVERFLOW: hidden; PADDING-TOP: 30px;}
+
+/*Title CSS*/
+.mTit {FONT: 12px Verdana;}
+.mTitBtn {MARGIN: 53px 0px 0px; DISPLAY: inline-block;}
+.myRegionL {WIDTH: 390px; DISPLAY: inline; FLOAT: left;}
+.myRegionR {WIDTH: 390px; DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 29px;}
+.myTit {PADDING-BOTTOM: 7px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: bold 12px Verdana; COLOR: #00376e; PADDING-TOP: 0px;}
+.mmTit {PADDING-BOTTOM: 7px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 12px/13px Verdana; PADDING-TOP: 0px;}
+.mmTitBtn {MARGIN: 7px 0px 0px; DISPLAY: inline-block;}
+
+/*GridView TABLE CSS*/
+table.infotable {margin-bottom:15px;text-align:left; font:11px normal Arial,Verdana,sans-serif; font-weight:normal;}
+table.infotable  tr td, table.infotable tr th {border-bottom:1px solid #DDDDDD;line-height:normal;padding:6px 0px 6px 6px;text-align:left;}
+table.infotable thead tr {background-color:#f5f5f5;}
+table.infotable th {font-weight:bold; color: #305B7F; background-color:#f5f5f5; padding:5px 0px 5px 5px; height:30px; line-height:40px;}
+table.infotable tbody tr.selected {background-color:#EAF8DF !important;}
+.tableactions {float:left;}
+.tableactions select {height:22px;}
+table.infotable  tr td a {color:#6587eb; text-decoration:underline;}
+table.infotable  tr td a:hover, a.action.active {text-decoration:none;}
+.gFooter { color:#00376e;}
+
+
+/*Grid Paging CSS*/
+.pagination {font-size: 11px;font-weight: bold;padding-bottom: 15px;padding-top: 15px;border-top: 1px solid #eee;}
+.pagination.floatright {float:right;text-align: right;padding-top:0;border: 0;width: 500px;overflow: hidden;}
+.pagination a{display:inline-block;height:23px;padding:0 0 0 3px;color:#333 !important;background:url(../images/minibutton_matrix.png) 0 0 no-repeat;white-space:nowrap;border:none;overflow:visible;cursor:pointer;text-decoration:none !important;margin-bottom:5px;}
+.pagination a > span{display:block;height:23px;padding:0 10px 0 8px;line-height:23px;background:url(../images/minibutton_matrix.png) 100% 0 no-repeat;}
+.pagination a:hover, .pagination a.active {color:#fff !important;text-decoration:none;background-position:0 -30px;}
+.pagination a:hover > span, .pagination a.active > span {background-position:100% -30px;}
+
+/*ASP.NET Controls CSS*/
+.drpClass {color:#817c7c;height:26px;line-height:24px;background:white url(../images/bkDrp.png) repeat-x top right; padding:1px;border-top:1px solid #8d8e8d;border-left:1px solid #8d8e8d;	border-right:1px solid #e0e1e0;	border-bottom:1px solid #e0e1e0; font-size:13px;}
+.rblClass {border:Solid 0px White; height:22px; font-size:12px; border-bottom:none;}
+.rblClass input {border:Solid 0px White; height:22px; font-size:12px; border-bottom:none;}
+
+/*Validation Controls CSS*/
+form span.valid-side-note, form span.invalid-side-note {margin-left:5px; padding:0 0 0 18px; background-repeat:no-repeat; background-position:left 1px; font-size:12px;}
+form span.valid-side-note { background-image:url('../images/icons/icon_notification_success.png') }
+form span.invalid-side-note { background-image:url('../images/icons/icon_notification_error.png'); }
+input.valid { border-color:#549a2a; }
+input.invalid { border-color:#ae432e; }
+
+/*Button Background CSS*/
+.btnClass { border-radius: 3px; background-color:#00386F; color:White; height:30px; border:Solid 1px #00386F;}
+.btnClass:hover{ border-radius: 3px; background-color:Gray; color:White; height:30px; border:Solid 1px Gray;}
+
+/*Message CSS*/
+.message {-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding: 0px 0px 0px 20px; position:relative;margin:2px 0px 2px 0px;cursor:pointer; vertical-align:middle;}
+.message.success {color:#539B2D;background-color:#EBF8D6;background:url("../images/icons/icoSuccess.png") 0px 0px no-repeat; line-height:22px;}
+.message.warning {background-color:#FEFDE2;color:#666666;background:url("../images/icons/icoWarning.png") 0px 0px no-repeat; line-height:22px;}
+.message.error {background-color:#FFECE6;color:#842100;background:url("../images/icons/icoError.png") 0px 0px no-repeat; line-height:22px;}
+.message.information {background-color:#D3EEF1;color:#369CAB;background:url("../images/icons/icoInformation.png") 0px 0px no-repeat; line-height:22px;}
+
+/*Modal Background*/
+.modalBackground {background-color:Black;filter:alpha(opacity=50);opacity:0.5;}
+
+/*Paging Seperator*/
+.pagingClass {font-size:16px;}
+.pagingClass a {margin:0px 4px 0px 4px; clear:both;}
+
+/*LinkButton CSS*/
+.lbtnAddClass {background-image:url(../images/icoAddRecord.png); padding-left:20px; background-repeat:no-repeat; background-position:left; margin-bottom:5px;}
+.lbtnPrintClass {background-image:url(../images/icoPrintRecord.png); padding-left:20px; background-repeat:no-repeat; background-position:left; margin-bottom:5px;}
+.lbtnViewClass {background-image:url(../images/icoViewRecord.png); padding-left:20px; background-repeat:no-repeat; background-position:left; margin-bottom:5px; font-size:12px;}
+.lbtnShowClass {background-image:url(../images/icoViewRecord.png); padding-left:20px; background-repeat:no-repeat; background-position:left; margin-bottom:5px;}
+.lbtnSearchClass {background-image:url(../images/icoSearchRecord.gif); padding-left:20px; background-repeat:no-repeat; background-position:left; margin-bottom:5px;}
+
+/*Gridview Sorting CSS*/
+.sortAsc {background-image: url(../images/asc.gif);background-repeat: no-repeat;background-position: center right;cursor: pointer;}
+.sortDesc {background-image: url(../images/desc.gif);background-repeat: no-repeat;background-position: center right;cursor: pointer;}
+
+/*TextBox Class*/
+.txtRequiredClass {BORDER: #cccccc 1px solid; LINE-HEIGHT: 30px; FONT-FAMILY: Verdana; BACKGROUND: #f8f5ed; HEIGHT: 30px; COLOR: #666666; FONT-SIZE: 12px; PADDING:5px; margin:2px 0px 4px 0px;}
+.txtClass {BORDER: #cccccc 1px solid; LINE-HEIGHT: 30px; FONT-FAMILY: Verdana; BACKGROUND: #f2f2f2; HEIGHT: 30px; COLOR: #666666; FONT-SIZE: 12px; PADDING: 5px; margin:2px 0px 4px 0px;}
+
+/*Hide GridView Column Class*/
+.hideGridColumn {display:none;}
+
+
+/*Form Design CSS*/
+.tblDetailView {TABLE-LAYOUT: fixed; BORDER-TOP: #c6591e 1px solid;}
+.tblDetailView TH {BORDER-BOTTOM: #e4e4e4 1px solid; TEXT-ALIGN: left; BACKGROUND: #f5f5f5; HEIGHT: 34px;}
+.tblDetailView TH .bullet {PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; DISPLAY: block; FONT: bold 11px Tahoma; BACKGROUND: no-repeat 0px 5px; COLOR: #666; PADDING-TOP: 0px;}
+
+/*.tblView TD {BORDER-BOTTOM: #ededed 1px solid; FONT: 12px/18px Verdana; COLOR: #666; PADDING-BOTTOM: 5px; PADDING-TOP: 5px;}*/
+
+.tblDetailView TD.td {BORDER-BOTTOM: #ededed 1px solid; PADDING-LEFT: 10px; FONT: 12px/18px Verdana; HEIGHT: 28px; COLOR: #666;}
+.tblDetailView TD A {}
+.tblDetailView TD A:hover {}
+.tblDetailView TD .add {WIDTH: 28px; DISPLAY: inline-block;}
+.tblDetailView TD .add02 {TEXT-ALIGN: right; WIDTH: 46px; DISPLAY: inline-block;}
+.tblDetailView TD INPUT.txtClass {BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 13px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-FAMILY: Verdana; BACKGROUND: #f2f2f2; HEIGHT: 24px; COLOR: #666666; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 0px;}
+.tblDetailView TD INPUT.txtRequiredClass {BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 13px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-FAMILY: Verdana; BACKGROUND: #f8f5ed; HEIGHT: 24px; COLOR: #666666; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 0px;}
+
+.tblDetailView TD INPUT[disabled].txt {BACKGROUND: Red}
+
+.tblDetailView TD INPUT[readonly].txt {BACKGROUND: #f2f2f2;}
+.tblDetailView .tdrow01 {PADDING-BOTTOM: 7px; PADDING-TOP: 7px;}
+.tblDetailView TD .deliveryBox {TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; WIDTH: 196px; PADDING-RIGHT: 0px; HEIGHT: 40px; COLOR: #ccc; FONT-SIZE: 11px; PADDING-TOP: 0px;}
+.tblDetailView TD .tdrowfl {WIDTH: 250px; DISPLAY: inline; FLOAT: left;}
+.tblDetailView TD .tdrowfr {TEXT-ALIGN: right; MARGIN: 0px 20px 0px 0px; WIDTH: 350px; DISPLAY: inline; FLOAT: right;}
+.tblDetailView TD .textareaWrap {}
+.tblDetailView TD .textareaView {PADDING-BOTTOM: 30px; OVERFLOW-X: auto; MIN-HEIGHT: 30px; PADDING-LEFT: 20px; WIDTH: 769px; PADDING-RIGHT: 20px; FONT: 12px/1.9em Verdana; COLOR: #888; OVERFLOW: hidden; PADDING-TOP: 30px;}
+
+.panelPadding 
+{
+    margin:0px 10px 15px 10px;
+}
+
+.mT1 {MARGIN-TOP: 1px !important;}
+.mT2 {MARGIN-TOP: 2px !important;}
+.mT3 {MARGIN-TOP: 3px !important;}
+.mT4 {MARGIN-TOP: 4px !important;}
+.mT5 {MARGIN-TOP: 5px !important;}
+.mT6 {MARGIN-TOP: 6px !important;}
+.mT7 {MARGIN-TOP: 7px !important;}
+.mT10 {MARGIN-TOP: 10px !important;}
+
+
+.gray01 {COLOR: #666666 !important;}
+.gray02 {COLOR: #999999 !important;}
+.gray03 {COLOR: #cccccc !important;}
+.white {COLOR: #fff !important;}
+.brown {COLOR: #ca983f !important;}
+.brownD {COLOR: #8e6a1c !important;}
+.orange {COLOR: #e1753b !important;}
+.orange02 {COLOR: #ff8800 !important;}
+.red {COLOR: #00376e !important;}
+.red02 {COLOR: #fe2121 !important;}
+.yellow {COLOR: #ffffcc !important;}
+

@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Student.master.cs" Inherits="ExamCell_ExamCell" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- CSS Files-->
+    <link href="../Shared/css/styles.css" rel="stylesheet" />
+    <link href="../Shared/css/style.css" rel="stylesheet" />
+    <link href="../Shared/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Shared/css/datepicker3.css" rel="stylesheet" />
+    <link href="../Shared/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <!-- NAvigation Bar-->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>Student</span>Dash</a>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+    <!--Collpasible Sidebar-->
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<div class="profile-sidebar">
+			<div class="profile-userpic">
+				<img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
+			</div>
+			<div class="profile-usertitle">
+                <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
+				
+				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="divider"></div>
+		
+		<ul class="nav menu" id="menu1">
+			<li ><a href="Default.aspx" id="default"><em>&nbsp;</em> Dashboard</a></li>
+            <li><a href="TimeTable.aspx" id="timetable"><em >&nbsp;</em>Upload Time Table</a></li>
+			<li><a href="Generate.aspx" id="generate"><em >&nbsp;</em> Generate Sitting Plan</a></li>
+			<li><a href="View.aspx" id="view"><em >&nbsp;</em> View Sitting Plan</a></li>
+			
+			<li><a href="AddRoom.aspx"><em >&nbsp;</em> Add Rooms</a></li>
+			
+			<li><a href="/Default.aspx"><em class="">&nbsp;</em> Logout</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+
+    <div class="col-lg-10 col-sm-9">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
