@@ -14,5 +14,5 @@ A Web application
 4. HTML5
 
 # Resources
-1. Documentation 
-2. Screenshots
+1. Documentation : https://github.com/AKspace/AutoSeats/blob/master/SRS_Document.docx
+2. Screenshots : https://github.com/AKspace/AutoSeats/blob/master/Snapshots.pdf
